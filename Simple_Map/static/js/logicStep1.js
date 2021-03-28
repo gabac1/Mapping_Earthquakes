@@ -47,7 +47,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     style: myStyle,
     onEachFeature: function(feature, layer) {
     console.log(layer.feature.properties);
-    layer.bindPopup("<h2>Neighborhood: " + layer.feature.properties.AREA_NAME + "</h2>");
+    layer.bindPopup();
     }
   }).addTo(map);
 })
